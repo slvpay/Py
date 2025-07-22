@@ -54,7 +54,7 @@
 
       if (orderId) {
         try {
-          const res = await fetch(`https://paypal-verify-order.alexskeioslav.workers.dev/?token=${orderId}`);
+          const res = await fetch(`https://verify-paypal-alt-pymts.alexskeioslav.workers.dev/?token=${orderId}`);
           if (res.ok) {
             console.log('✅ Payment verified and subscription updated.');
           } else {
